@@ -1,8 +1,3 @@
-" {{{1 keys timeout
-set timeoutlen=1000
-" make the return to normal mode with escape not take too long and confuse me:
-set ttimeoutlen=0
-
 " {{{1 search
 " highlight search during typing
 set nohlsearch
