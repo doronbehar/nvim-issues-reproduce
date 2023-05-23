@@ -1,21 +1,3 @@
-" {{{1 Uncategorized
-" Make any buffer able to be hidden even if not saved
-set hidden
-" no word wrap:
-set nowrap
-" Easier to launch new splits:
-set splitbelow
-set splitright
-" When opening new files, look recursively into subdirectories
-set path+=**
-" The langugages I speak
-set spelllang=en,he
-filetype plugin on
-" Default tex flavor
-let g:tex_flavor = 'latex'
-" file completion
-set isfname-==
-
 " {{{1 keys timeout
 set timeoutlen=1000
 " make the return to normal mode with escape not take too long and confuse me:
