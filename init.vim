@@ -1,4 +1,3 @@
-" {{{1 UI
 " Colors
 set autoread
 syntax enable
@@ -51,25 +50,3 @@ set foldcolumn=2
 if $SSH_CLIENT !=# ''
 	set lazyredraw
 endif
-
-" {{{1 UX
-" From some reason this is not the default on Vim, see
-" https://vi.stackexchange.com/a/2163/6411
-set backspace=indent,eol,start
-
-" {{{1 tab's and indentation preferences:
-set shiftwidth=4
-set tabstop=4
-set autoindent
-set smartindent
-set preserveindent
-filetype indent on
-
-" {{{1 backup and restore
-set backupdir=~/.local/share/nvim/tmp//
-set directory=~/.local/share/nvim/tmp//
-set viewdir=~/.local/share/nvim/view//
-" restore-view setting:
-set viewoptions=cursor
-" mks settings:
-set sessionoptions=folds,help,resize,tabpages,winpos,winsize
