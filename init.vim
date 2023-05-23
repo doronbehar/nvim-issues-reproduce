@@ -1,16 +1,3 @@
-" {{{1 search
-" highlight search during typing
-set nohlsearch
-" incremental search
-set incsearch
-" incremental substitution
-if exists('&inccommand')
-	set inccommand=split
-end
-" Smart case: case-sensitive when uppercase, otherwise - not.
-set ignorecase
-set smartcase
-
 " {{{1 UI
 " Colors
 set autoread
