@@ -1,28 +1,3 @@
-" Colors
-set autoread
-syntax enable
-hi normal guibg=#000000 ctermbg=0
-" who uses Ex mode?
-map Q <nop>
-" Always display the tabline, even if there is only one tab:
-set showtabline=2
-set list
-if $DISPLAY !=# ''
-	set showbreak=ˆ
-	set listchars=tab:›\ ,trail:-,extends:»,precedes:«,eol:¬
-else
-	set showbreak=^
-	set listchars=tab:>\ ,trail:-,extends:»,precedes:«,eol:¬
-	" Used by ~/.zshrc and potentially other configs
-	let $TERM_NO_ICONS_FONT=1
-end
-" Always display the statusline in all windows:
-set laststatus=2
-" Hide the default mode text (e.g. -- INSERT -- below the statusline):
-set noshowmode
-" enable mouse actions
-set mouse=a
-" folds
 function! s:largeFiles()
 	setlocal foldmethod=indent
 	setlocal foldexpr=0
@@ -42,11 +17,3 @@ autocmd BufEnter * if getfsize(expand("<afile>")) > 1024 * 1024 |
 	\ else |
 	\ execute('DoMatchParen') |
 \ endif
-set foldenable
-" indentation rules, read more at :help indent.txt
-let g:vim_indent_cont = &shiftwidth
-set foldcolumn=2
-" set lazyredraw only on ssh
-if $SSH_CLIENT !=# ''
-	set lazyredraw
-endif
